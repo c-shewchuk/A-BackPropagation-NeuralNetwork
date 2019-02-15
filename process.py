@@ -31,8 +31,7 @@ def addNoise(array, error):
 
 #import data
 filename = "GlassData.csv"
-rawData = np.genfromtxt(filename, delimiter = ',', \
-                        skip_header = 1)
+rawData = np.genfromtxt(filename, delimiter = ',', skip_header = 1)
 rawData = rawData[:,1:len(rawData[0,:])] #trim first col of data
 rows = len(rawData[:,0])
 cols = len(rawData[0,:])
